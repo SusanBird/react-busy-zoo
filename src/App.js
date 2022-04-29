@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import LionUnicornFight from './LionUnicornFight';
 import OpenAndClosedSign from './OpenAndClosedSign';
