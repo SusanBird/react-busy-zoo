@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import LionUnicornFight from './LionUnicornFight';
+import OpenAndClosedSign from './OpenAndClosedSign';
+import AnimalParade from './AnimalParade';
 
 function App() {
   return (
     <div className="App">
-      <LionUnicornFight />
-      <OpenAndClosedSign />
-      <AnimalParade />
+      <header className='App-header'>
+        <LionUnicornFight />
+        <OpenAndClosedSign />
+        <AnimalParade />
+      </header>
     </div>
   );
 }
