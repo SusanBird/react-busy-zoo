@@ -23,6 +23,12 @@ export default function AnimalParade() {
   }
 
   return (
-    <div>AnimalParade</div>
-  )
+    <>
+      <div>
+        {animals.map(animal => <AnimalEmoji key={animal} animal={animal} />)}
+      </div><button onClick={handleAddCamel}>Add Camel</button>
+      <button onClick={handleAddRhino}>Add Rhino</button>
+      <button onClick={handleAddGiraffe}>Add Giraffe</button>
+    </>
+  );
 }
