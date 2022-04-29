@@ -22,6 +22,12 @@ export default function AnimalParade() {
     setAnimals([...animals]);
   }
 
+  function handleRemoveAnimal() {
+    animals.pop();
+
+    setAnimals([...animals]);
+  }
+
   return (
     <>
       <div>
@@ -29,6 +35,7 @@ export default function AnimalParade() {
       </div><button onClick={handleAddCamel}>Add Camel</button>
       <button onClick={handleAddRhino}>Add Rhino</button>
       <button onClick={handleAddGiraffe}>Add Giraffe</button>
+      <button onClick={handleRemoveAnimal}>Remove last animal</button>
     </>
   );
 }
