@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+.fight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fight button {
+  margin-bottom: 40px;
+
+}
+
+.fighter {
+  display: block;
+}
+
+.emoji {
+  padding: 50px;
+  transition: all .2s ease-in-out;
+}
+
+.open-closed-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.AnimalParade {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.fight .open-closed-sign .AnimalParade {
+  height: 33%;
+}
+
+.fight {
+  background-color: mediumaquamarine;
+}
+
+.open-closed-sign {
+  background-color: coral;
+}
+
+.AnimalParade {
+  background-color: violet;
+}
+
