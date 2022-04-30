@@ -11,19 +11,14 @@ export default function OpenAndClosedSign() {
     setIsOpen(false);
   }
 
-  function handleToggleZoo() {
-    setIsOpen(!isOpen);
-  }   
-
   return (
 
-    <div>
+    <div className='open-closed-sign'>
       <div>
         {isOpen ? 'Welcome to the Zoo!' : 'The animals are sleeping now, see you tomorrow!'}
       </div>
       <button onClick={handleOpenZoo}>Open Zoo</button>
       <button onClick={handleCloseZoo}>Close Zoo</button>
-      <button onClick={handleToggleZoo}>Toggle Zoo</button>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 export default function LionUnicornFight() {
-  const [unicornStrength, setUnicornStrength] = useState(1);
-  const [lionStrength, setLionStrength] = useState(1);
+  const [unicornStrength, setUnicornStrength] = useState(5);
+  const [lionStrength, setLionStrength] = useState(5);
   
   function handleUnicornAttack() {
     setLionStrength(lionStrength - .2);
