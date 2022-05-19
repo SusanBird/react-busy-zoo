@@ -4,7 +4,7 @@ import { customers } from './data.js';
 
 export default function MyTable() {
   return (
-    <div style={{ maxWidth: '75%' }}>
+    <div style={{ maxWidth: '100%' }}>
       <MaterialTable
         columns={
           [
@@ -21,10 +21,10 @@ export default function MyTable() {
         title="Customer Data"
         options={{  
           headerStyle: { 
-            background: 'navy',
+            background: 'orange',
           },
           rowStyle: { 
-            background: 'orange',
+            background: 'lightblue',
           }
         }
         }
