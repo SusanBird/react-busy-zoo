@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CustomButton from './CustomButton';
 
 export default function LionUnicornFight() {
   const [unicornStrength, setUnicornStrength] = useState(5);
@@ -18,15 +19,15 @@ export default function LionUnicornFight() {
         <div className='emoji' style={{ fontSize: `${unicornStrength}rem` }}>
           🦄
         </div>
-        <button onClick={handleUnicornAttack}>Unicorn attacks lion</button>
-        <button onClick={handleUnicornEatSprinkles}>Unicorn eats some sprinkles</button>
+        <CustomButton onClick={handleUnicornAttack}>Unicorn attacks lion</CustomButton>
+        <CustomButton onClick={handleUnicornEatSprinkles}>Unicorn eats some sprinkles</CustomButton>
       </div>
       <div className='fighter'>
         <div className='emoji' style={{ fontSize: `${lionStrength}rem` }}>
           🦁
         </div>
-        <button onClick={() => setUnicornStrength(unicornStrength - .2)}>Lion attack unicorn</button>
-        <button onClick={() => setLionStrength(lionStrength + .2)}>Lion roars</button>
+        <CustomButton onClick={() => setUnicornStrength(unicornStrength - .2)}>Lion attack unicorn</CustomButton>
+        <CustomButton onClick={() => setLionStrength(lionStrength + .2)}>Lion roars</CustomButton>
       </div>
     </div>
   );

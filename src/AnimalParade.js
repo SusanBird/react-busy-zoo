@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AnimalEmoji from './AnimalEmoji';
+import CustomButton from './CustomButton';
 
 export default function AnimalParade() {
   const [animals, setAnimals] = useState(['camel', 'rhino', 'giraffe']);
@@ -33,10 +34,10 @@ export default function AnimalParade() {
       <div>
         {animals.map(animal => <AnimalEmoji key={animal} animal={animal} />)}
       </div>
-      <button onClick={handleAddCamel}>Add Camel</button>
-      <button onClick={handleAddRhino}>Add Rhino</button>
-      <button onClick={handleAddGiraffe}>Add Giraffe</button>
-      <button onClick={handleRemoveAnimal}>Remove last animal</button>
+      <CustomButton onClick={handleAddCamel}>Add Camel</CustomButton>
+      <CustomButton onClick={handleAddRhino}>Add Rhino</CustomButton>
+      <CustomButton onClick={handleAddGiraffe}>Add Giraffe</CustomButton>
+      <CustomButton onClick={handleRemoveAnimal}>Remove last animal</CustomButton>
     </div>
   );
 }
