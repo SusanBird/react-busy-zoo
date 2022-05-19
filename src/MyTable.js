@@ -11,9 +11,9 @@ export default function MyTable() {
             { title: 'Id', field: 'id' },
             { title: 'First Name', field: 'first_name' },
             { title: 'Last Name', field: 'last_name' },
-            { title: 'Email', field: 'email' },
             { title: 'Gender', field: 'gender' },
-            { title: 'Computer Address Host', field: 'ip_address' }
+            { title: 'Catchphrase', field: 'catch_phrase' },
+            { title: 'Language', field: 'language' }
           ]
         }
         data={customers}
