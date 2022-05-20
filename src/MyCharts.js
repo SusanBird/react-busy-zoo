@@ -65,3 +65,5 @@ export default function MyCharts() {
     </div>
   );
 }
+
+//netlify deploy
